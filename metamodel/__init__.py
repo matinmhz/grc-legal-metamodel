@@ -1,0 +1,1 @@
+"""FADP legal metamodel viewer."""

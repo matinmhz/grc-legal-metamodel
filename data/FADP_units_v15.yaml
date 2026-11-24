@@ -1,0 +1,3218 @@
+# Generated from FADP_units_v15.xlsx (sheets Units, Relations, Attributes, Levels and Layers, Level structure). Gate: FADP-2-1-a applies to every unit.
+units:
+- id: FADP-2-1-a
+  provision: FADP 2(1)(a)
+  summary: Act applies to a private person processing personal data of natural persons
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: PERSONAL_SCOPE
+  layer: CORE
+  applies_if_all: [FADP-3-1, FADP-5-a, FADP-5-d]
+- id: FADP-2-2-a
+  provision: FADP 2(2)(a)
+  summary: 'Excluded: processing by a natural person for personal use only'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: SCOPE_EXCEPTIONS
+  layer: EXCEPTION
+  exception_to: [FADP-2-1-a]
+- id: FADP-2-2-c
+  provision: FADP 2(2)(c)
+  summary: 'Excluded: institutional beneficiaries with immunity (Host State Act)'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: SCOPE_EXCEPTIONS
+  layer: EXCEPTION
+  exception_to: [FADP-2-1-a]
+- id: FADP-2-3
+  provision: FADP 2(3)
+  summary: Procedural law governs data and rights in court proceedings; the Act applies to first-instance administrative proceedings
+  concept: REQUIREMENT
+  test: PARTLY
+  level: SCOPE_EXCEPTIONS
+  layer: EXCEPTION
+  exception_to: [FADP-2-1-a]
+- id: FADP-2-4
+  provision: FADP 2(4)
+  summary: 'Public registers for private legal transactions: their own law prevails'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: SCOPE_EXCEPTIONS
+  layer: EXCEPTION
+  exception_to: [FADP-2-1-a]
+- id: FADP-3-1
+  provision: FADP 3(1)
+  summary: Applies if the circumstances have an effect in Switzerland, even if started abroad
+  concept: REQUIREMENT
+  test: PARTLY
+  level: TERRITORIAL_SCOPE
+  layer: CORE
+- id: FADP-5-a
+  provision: FADP 5(a)
+  summary: 'Personal data: information on an identified or identifiable natural person'
+  concept: DEFINITION
+  test: BOOLEAN
+  level: DEFINITIONS
+  layer: CONDITION
+- id: FADP-5-b
+  provision: FADP 5(b)
+  summary: 'Data subject: natural person whose data is processed'
+  concept: DEFINITION
+  test: BOOLEAN
+  level: DEFINITIONS
+  layer: CONDITION
+- id: FADP-5-c-1
+  provision: FADP 5(c)(1)
+  summary: 'Sensitive data: religious, philosophical, political or trade union views or activities'
+  concept: DEFINITION
+  test: BOOLEAN
+  level: DEFINITIONS
+  layer: CONDITION
+- id: FADP-5-c-2
+  provision: FADP 5(c)(2)
+  summary: 'Sensitive data: health, private sphere, race or ethnicity'
+  concept: DEFINITION
+  test: BOOLEAN
+  level: DEFINITIONS
+  layer: CONDITION
+- id: FADP-5-c-3
+  provision: FADP 5(c)(3)
+  summary: 'Sensitive data: genetic data'
+  concept: DEFINITION
+  test: BOOLEAN
+  level: DEFINITIONS
+  layer: CONDITION
+- id: FADP-5-c-4
+  provision: FADP 5(c)(4)
+  summary: 'Sensitive data: biometric data identifying a person'
+  concept: DEFINITION
+  test: BOOLEAN
+  level: DEFINITIONS
+  layer: CONDITION
+- id: FADP-5-c-5
+  provision: FADP 5(c)(5)
+  summary: 'Sensitive data: administrative and criminal proceedings or sanctions'
+  concept: DEFINITION
+  test: BOOLEAN
+  level: DEFINITIONS
+  layer: CONDITION
+- id: FADP-5-c-6
+  provision: FADP 5(c)(6)
+  summary: 'Sensitive data: social assistance measures'
+  concept: DEFINITION
+  test: BOOLEAN
+  level: DEFINITIONS
+  layer: CONDITION
+- id: FADP-5-d
+  provision: FADP 5(d)
+  summary: 'Processing: any handling of data (collect, store, use, disclose, delete...)'
+  concept: DEFINITION
+  test: BOOLEAN
+  level: DEFINITIONS
+  layer: CONDITION
+  applies_if_all: [FADP-5-a]
+- id: FADP-5-e
+  provision: FADP 5(e)
+  summary: 'Disclosure: transmitting data or making it accessible'
+  concept: DEFINITION
+  test: BOOLEAN
+  level: DEFINITIONS
+  layer: CONDITION
+  applies_if_all: [FADP-5-a]
+- id: FADP-5-f
+  provision: FADP 5(f)
+  summary: 'Profiling: automated evaluation of personal aspects'
+  concept: DEFINITION
+  test: PARTLY
+  level: DEFINITIONS
+  layer: CONDITION
+  applies_if_all: [FADP-5-a]
+- id: FADP-5-g
+  provision: FADP 5(g)
+  summary: 'High-risk profiling: profiling that matches data to assess essential aspects of the personality'
+  concept: DEFINITION
+  test: ASSESSMENT
+  level: DEFINITIONS
+  layer: CONDITION
+  applies_if_all: [FADP-5-f]
+- id: FADP-5-h
+  provision: FADP 5(h)
+  summary: 'Breach of data security: security breach leading to loss, deletion, destruction, modification or unauthorised disclosure or access'
+  concept: ISSUE
+  test: PARTLY
+  level: DEFINITIONS
+  layer: CONDITION
+- id: FADP-5-j
+  provision: FADP 5(j)
+  summary: 'Controller: decides purpose and means of processing'
+  concept: ROLE
+  test: BOOLEAN
+  level: DEFINITIONS
+  layer: CONDITION
+- id: FADP-5-k
+  provision: FADP 5(k)
+  summary: 'Processor: processes data on behalf of the controller'
+  concept: ROLE
+  test: BOOLEAN
+  level: DEFINITIONS
+  layer: CONDITION
+- id: FADP-6-1
+  provision: FADP 6(1)
+  summary: Process lawfully
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: PROCESSING_PRINCIPLES
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FADP-5-a, FADP-5-d]
+- id: FADP-6-2-1
+  provision: FADP 6(2)
+  summary: Process in good faith
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: PROCESSING_PRINCIPLES
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FADP-5-a, FADP-5-d]
+- id: FADP-6-2-2
+  provision: FADP 6(2)
+  summary: Process proportionately
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: PROCESSING_PRINCIPLES
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FADP-5-a, FADP-5-d]
+- id: FADP-6-3-1
+  provision: FADP 6(3)
+  summary: Collect only for a specific purpose the data subject can recognise
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: PROCESSING_PRINCIPLES
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FADP-5-a, FADP-5-d]
+- id: FADP-6-3-2
+  provision: FADP 6(3)
+  summary: Further processing only if compatible with that purpose
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: PROCESSING_PRINCIPLES
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FADP-5-a, FADP-5-d]
+- id: FADP-6-4-1
+  provision: FADP 6(4)
+  summary: Destroy or anonymise when no longer required for the purpose
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: PROCESSING_PRINCIPLES
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FADP-5-a, FADP-5-d]
+- id: FADP-6-5-1
+  provision: FADP 6(5)
+  summary: Satisfy yourself that the data are accurate
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: PROCESSING_PRINCIPLES
+  layer: CORE
+  addressee: ANY_PERSON
+  applies_if_all: [FADP-5-a, FADP-5-d]
+- id: FADP-6-5-2
+  provision: FADP 6(5)
+  summary: Correct, delete or destroy incorrect or incomplete data
+  concept: REQUIREMENT
+  test: PARTLY
+  level: PROCESSING_PRINCIPLES
+  layer: CORE
+  addressee: ANY_PERSON
+  applies_if_all: [FADP-5-a, FADP-5-d]
+- id: FADP-6-5-3
+  provision: FADP 6(5)
+  summary: Measures depend on form, extent and risk of the processing
+  concept: CRITERION
+  test: ASSESSMENT
+  level: PROCESSING_PRINCIPLES
+  layer: ASSESSMENT
+  input_to: [FADP-6-5-1, FADP-6-5-2]
+- id: FACT-6-6
+  provision: FADP 6(6)
+  summary: The consent of the data subject is required
+  concept: FACT
+  test: BOOLEAN
+  level: PROCESSING_PRINCIPLES
+  layer: CONDITION
+- id: FADP-6-6-1
+  provision: FADP 6(6)
+  summary: Consent, where required, is voluntary
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: PROCESSING_PRINCIPLES
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FACT-6-6]
+- id: FADP-6-6-2
+  provision: FADP 6(6)
+  summary: Consent covers specific instances of processing
+  concept: REQUIREMENT
+  test: PARTLY
+  level: PROCESSING_PRINCIPLES
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FACT-6-6]
+- id: FADP-6-6-3
+  provision: FADP 6(6)
+  summary: Consent is based on appropriate information
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: PROCESSING_PRINCIPLES
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FACT-6-6]
+- id: FADP-6-7-a
+  provision: FADP 6(7)(a)
+  summary: Explicit consent for sensitive data
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: PROCESSING_PRINCIPLES
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FACT-6-6]
+  applies_if_any: [FADP-5-c-1, FADP-5-c-2, FADP-5-c-3, FADP-5-c-4, FADP-5-c-5, FADP-5-c-6]
+- id: FADP-6-7-b
+  provision: FADP 6(7)(b)
+  summary: Explicit consent for high-risk profiling by a private person
+  concept: REQUIREMENT
+  test: PARTLY
+  level: PROCESSING_PRINCIPLES
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FADP-5-g, FACT-6-6]
+- id: FADP-6-4-2
+  provision: FADP 6(4)
+  summary: Retention and deletion schedule per data category
+  concept: CONTROL_DEDUCED
+  test: BOOLEAN
+  level: PROCESSING_PRINCIPLES
+  layer: CONTROL
+  serves: [FADP-6-4-1]
+- id: FADP-6-5-4
+  provision: FADP 6(5)
+  summary: Routine to check accuracy and correct data
+  concept: CONTROL_DEDUCED
+  test: BOOLEAN
+  level: PROCESSING_PRINCIPLES
+  layer: CONTROL
+  serves: [FADP-6-5-1, FADP-6-5-2]
+- id: FADP-6-6-7
+  provision: FADP 6(6)-(7)
+  summary: Record of each consent (who, when, for what)
+  concept: CONTROL_DEDUCED
+  test: BOOLEAN
+  level: PROCESSING_PRINCIPLES
+  layer: CONTROL
+  serves: [FADP-6-6-1, FADP-6-6-2, FADP-6-6-3, FADP-6-7-a, FADP-6-7-b]
+- id: FADP-7-1-1
+  provision: FADP 7(1)
+  summary: Arrange processing technically and organisationally to respect the rules
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DESIGN_AND_DEFAULT
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FADP-5-d, FADP-5-j]
+  cites: [FADP-6-1, FADP-6-2-1, FADP-6-2-2, FADP-6-3-1, FADP-6-3-2, FADP-6-4-1, FADP-6-5-1, FADP-6-5-2]
+- id: FADP-7-1-2
+  provision: FADP 7(1)
+  summary: Consider this from the planning stage
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DESIGN_AND_DEFAULT
+  layer: PROPERTY
+  addressee: CONTROLLER
+  limits: [FADP-7-1-1]
+- id: FADP-7-2
+  provision: FADP 7(2)
+  summary: Measures appropriate to state of the art, nature, extent and risk
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DESIGN_AND_DEFAULT
+  layer: PROPERTY
+  addressee: NOT_STATED
+  limits: [FADP-7-1-1]
+- id: FADP-7-3
+  provision: FADP 7(3)
+  summary: Default settings limit processing to the minimum needed
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DESIGN_AND_DEFAULT
+  layer: CONTROL
+  addressee: CONTROLLER
+- id: FADP-8-1
+  provision: FADP 8(1)
+  summary: Guarantee a level of security appropriate to the risk
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: CORE
+  addressee: CONTROLLER_PROCESSOR
+  applies_if_any: [FADP-5-j, FADP-5-k]
+- id: FADP-8-2
+  provision: FADP 8(2)
+  summary: Measures must make it possible to avoid breaches of data security
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: PROPERTY
+  addressee: NOT_STATED
+  cites: [FADP-5-h]
+  limits: [FADP-8-1]
+- id: FADP-8
+  provision: FADP 8; OPDo 3
+  summary: Periodic test that the named controls work
+  concept: CONTROL_DEDUCED
+  test: BOOLEAN
+  level: DATA_SECURITY
+  layer: CONTROL
+  serves: [FADP-8-1, OPDo-1-5-1]
+- id: FACT-9-1
+  provision: FADP 9(1)
+  summary: Processing is assigned to a processor
+  concept: FACT
+  test: BOOLEAN
+  level: PROCESSORS
+  layer: CONDITION
+  applies_if_all: [FADP-5-k]
+- id: FADP-9-1
+  provision: FADP 9(1)
+  summary: Processing assigned by contract or by law
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: PROCESSORS
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FACT-9-1]
+  sanctioned_by: [FADP-61-b]
+- id: FADP-9-1-a
+  provision: FADP 9(1)(a)
+  summary: Processor does only what the controller may do
+  concept: REQUIREMENT
+  test: PARTLY
+  level: PROCESSORS
+  layer: PROPERTY
+  addressee: NOT_STATED
+  applies_if_all: [FACT-9-1]
+  part_of: [FADP-9-1]
+  sanctioned_by: [FADP-61-b]
+- id: FADP-9-1-b
+  provision: FADP 9(1)(b)
+  summary: No legal or contractual confidentiality duty forbids the assignment
+  concept: REQUIREMENT
+  test: PARTLY
+  level: PROCESSORS
+  layer: PROPERTY
+  addressee: NOT_STATED
+  applies_if_all: [FACT-9-1]
+  part_of: [FADP-9-1]
+  sanctioned_by: [FADP-61-b]
+- id: FADP-9-2-1
+  provision: FADP 9(2)
+  summary: Controller satisfies itself that the processor guarantees data security
+  concept: CONTROL_NAMED
+  test: ASSESSMENT
+  level: PROCESSORS
+  layer: CONTROL
+  addressee: CONTROLLER
+  applies_if_all: [FACT-9-1]
+  cites: [FADP-8-1]
+  sanctioned_by: [FADP-61-b]
+- id: FACT-9-3
+  provision: FADP 9(3)
+  summary: The processor assigns processing to a third party
+  concept: FACT
+  test: BOOLEAN
+  level: PROCESSORS
+  layer: CONDITION
+  applies_if_all: [FADP-5-k]
+- id: FADP-9-3
+  provision: FADP 9(3)
+  summary: Processor sub-assigns only with the controller's prior approval
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: PROCESSORS
+  layer: CORE
+  addressee: PROCESSOR
+  applies_if_all: [FACT-9-3]
+- id: FADP-9-2-2
+  provision: FADP 9(2)
+  summary: Documented check of each processor before assignment
+  concept: CONTROL_DEDUCED
+  test: BOOLEAN
+  level: PROCESSORS
+  layer: CONTROL
+  serves: [FADP-9-2-1]
+- id: FACT-10-1
+  provision: FADP 10(1)
+  summary: A data protection officer is appointed
+  concept: FACT
+  test: BOOLEAN
+  level: DATA_PROTECTION_OFFICER
+  layer: CONDITION
+  applies_if_all: [FADP-10-1]
+- id: FADP-10-1
+  provision: FADP 10(1)
+  summary: Private controller may appoint a data protection officer (optional)
+  concept: ROLE
+  test: BOOLEAN
+  level: DATA_PROTECTION_OFFICER
+  layer: CONDITION
+- id: FADP-10-2-1
+  provision: FADP 10(2)
+  summary: Officer is contact point for data subjects and authorities
+  concept: ROLE
+  test: BOOLEAN
+  level: DATA_PROTECTION_OFFICER
+  layer: CONDITION
+  applies_if_all: [FACT-10-1]
+- id: FADP-10-2-2
+  provision: FADP 10(2)
+  summary: Officer trains and advises, supports application of the rules
+  concept: ROLE
+  test: ASSESSMENT
+  level: DATA_PROTECTION_OFFICER
+  layer: CONDITION
+  applies_if_all: [FACT-10-1]
+- id: FADP-10-3-a
+  provision: FADP 10(3)(a)
+  summary: Officer is independent and takes no instructions
+  concept: ROLE
+  test: ASSESSMENT
+  level: DATA_PROTECTION_OFFICER
+  layer: CONDITION
+  applies_if_all: [FACT-10-1]
+- id: FADP-10-3-b
+  provision: FADP 10(3)(b)
+  summary: Officer has no incompatible activities
+  concept: ROLE
+  test: PARTLY
+  level: DATA_PROTECTION_OFFICER
+  layer: CONDITION
+  applies_if_all: [FACT-10-1]
+- id: FADP-10-3-c
+  provision: FADP 10(3)(c)
+  summary: Officer has the required expertise
+  concept: ROLE
+  test: ASSESSMENT
+  level: DATA_PROTECTION_OFFICER
+  layer: CONDITION
+  applies_if_all: [FACT-10-1]
+- id: FADP-10-3-d
+  provision: FADP 10(3)(d)
+  summary: Controller publishes officer's contact and notifies the FDPIC
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_PROTECTION_OFFICER
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FACT-10-1]
+- id: FADP-11
+  provision: FADP 11; OPDo 12
+  summary: 'Optional: follow an FDPIC-reviewed code of conduct'
+  concept: CONTROL_NAMED
+  test: BOOLEAN
+  level: CODE_OF_CONDUCT
+  layer: CONTROL
+  addressee: NOT_STATED
+- id: FADP-12-1-1
+  provision: FADP 12(1)
+  summary: Controller keeps a record of processing activities
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: RECORD_OF_PROCESSING
+  layer: EVIDENCE
+  addressee: CONTROLLER
+  applies_if_all: [FADP-5-j]
+- id: FADP-12-1-2
+  provision: FADP 12(1)
+  summary: Processor keeps a record of processing activities
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: RECORD_OF_PROCESSING
+  layer: EVIDENCE
+  addressee: PROCESSOR
+  applies_if_all: [FADP-5-k]
+- id: FADP-12-2-a
+  provision: FADP 12(2)(a)
+  summary: Controller's record states identity of the controller
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: RECORD_OF_PROCESSING
+  layer: EVIDENCE
+  addressee: CONTROLLER
+  part_of: [FADP-12-1-1]
+- id: FADP-12-2-b
+  provision: FADP 12(2)(b)
+  summary: Controller's record states purpose of processing
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: RECORD_OF_PROCESSING
+  layer: EVIDENCE
+  addressee: CONTROLLER
+  part_of: [FADP-12-1-1]
+- id: FADP-12-2-c
+  provision: FADP 12(2)(c)
+  summary: Controller's record states categories of data subjects and of data
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: RECORD_OF_PROCESSING
+  layer: EVIDENCE
+  addressee: CONTROLLER
+  part_of: [FADP-12-1-1]
+- id: FADP-12-2-d
+  provision: FADP 12(2)(d)
+  summary: Controller's record states categories of recipients
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: RECORD_OF_PROCESSING
+  layer: EVIDENCE
+  addressee: CONTROLLER
+  part_of: [FADP-12-1-1]
+- id: FADP-12-2-e
+  provision: FADP 12(2)(e)
+  summary: Controller's record states retention period or criteria, if possible
+  concept: EVIDENCE
+  test: PARTLY
+  level: RECORD_OF_PROCESSING
+  layer: EVIDENCE
+  addressee: CONTROLLER
+  part_of: [FADP-12-1-1]
+- id: FADP-12-2-f
+  provision: FADP 12(2)(f)
+  summary: Controller's record states security measures, if possible
+  concept: EVIDENCE
+  test: PARTLY
+  level: RECORD_OF_PROCESSING
+  layer: EVIDENCE
+  addressee: CONTROLLER
+  part_of: [FADP-12-1-1]
+- id: FADP-12-2-g
+  provision: FADP 12(2)(g)
+  summary: Controller's record states State and guarantees, if disclosed abroad
+  concept: EVIDENCE
+  test: PARTLY
+  level: RECORD_OF_PROCESSING
+  layer: EVIDENCE
+  addressee: CONTROLLER
+  part_of: [FADP-12-1-1]
+- id: FADP-12-3-a
+  provision: FADP 12(3)
+  summary: Processor's record states identity of the processor and of the controller
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: RECORD_OF_PROCESSING
+  layer: EVIDENCE
+  addressee: PROCESSOR
+  part_of: [FADP-12-1-2]
+- id: FADP-12-3-b
+  provision: FADP 12(3)
+  summary: Processor's record states categories of processing carried out for the controller
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: RECORD_OF_PROCESSING
+  layer: EVIDENCE
+  addressee: PROCESSOR
+  part_of: [FADP-12-1-2]
+- id: FADP-12-3-c
+  provision: FADP 12(3)
+  summary: Processor's record states security measures, if possible
+  concept: EVIDENCE
+  test: PARTLY
+  level: RECORD_OF_PROCESSING
+  layer: EVIDENCE
+  addressee: PROCESSOR
+  part_of: [FADP-12-1-2]
+- id: FADP-12-3-d
+  provision: FADP 12(3)
+  summary: Processor's record states State and guarantees, if disclosed abroad
+  concept: EVIDENCE
+  test: PARTLY
+  level: RECORD_OF_PROCESSING
+  layer: EVIDENCE
+  addressee: PROCESSOR
+  part_of: [FADP-12-1-2]
+- id: FADP-12-5
+  provision: FADP 12(5); OPDo 24
+  summary: Exempt if fewer than 250 employees on 1 January
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: RECORD_OF_PROCESSING
+  layer: EXCEPTION
+  reference_date: 1 JANUARY
+  threshold: FEWER_THAN 250 EMPLOYEES
+  exception_to: [FADP-12-1-1, FADP-12-1-2]
+- id: FADP-13
+  provision: FADP 13
+  summary: 'Optional: certified system, product or service'
+  concept: CONTROL_NAMED
+  test: BOOLEAN
+  level: CERTIFICATION
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+- id: FADP-14-1
+  provision: FADP 14(1)
+  summary: Foreign controller appoints a representative in Switzerland
+  concept: ROLE
+  test: BOOLEAN
+  level: REPRESENTATIVE
+  layer: CONDITION
+  applies_if_all: [FADP-5-j, FADP-14-1-a, FADP-14-1-b, FADP-14-1-c, FADP-14-1-d]
+- id: FADP-14-1-a
+  provision: FADP 14(1)(a)
+  summary: 'Foreign controller: processing linked to offering goods or services or monitoring in Switzerland'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: REPRESENTATIVE
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-14-1-b
+  provision: FADP 14(1)(b)
+  summary: 'Foreign controller: processing on a large scale'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: REPRESENTATIVE
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-14-1-c
+  provision: FADP 14(1)(c)
+  summary: 'Foreign controller: processing is regular'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: REPRESENTATIVE
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-14-1-d
+  provision: FADP 14(1)(d)
+  summary: 'Foreign controller: processing poses a high risk'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: REPRESENTATIVE
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-14-2
+  provision: FADP 14(2)
+  summary: Representative is the contact point for data subjects and the FDPIC
+  concept: ROLE
+  test: BOOLEAN
+  level: REPRESENTATIVE
+  layer: CONDITION
+  addressee: REPRESENTATIVE
+  applies_if_all: [FADP-14-1]
+- id: FADP-14-3
+  provision: FADP 14(3)
+  summary: Foreign controller publishes the representative's name and address
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: REPRESENTATIVE
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FADP-14-1]
+- id: FADP-15-1
+  provision: FADP 15(1)
+  summary: Representative keeps the controller's record
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: REPRESENTATIVE_DUTIES
+  layer: EVIDENCE
+  addressee: REPRESENTATIVE
+  applies_if_all: [FADP-14-1]
+- id: FACT-15-2
+  provision: FADP 15(2)
+  summary: The FDPIC requests the information in the record
+  concept: FACT
+  test: BOOLEAN
+  level: REPRESENTATIVE_DUTIES
+  layer: CONDITION
+- id: FADP-15-2
+  provision: FADP 15(2)
+  summary: Representative gives the FDPIC record information on request
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: REPRESENTATIVE_DUTIES
+  layer: CORE
+  addressee: REPRESENTATIVE
+  applies_if_all: [FADP-14-1, FACT-15-2]
+- id: FACT-15-3
+  provision: FADP 15(3)
+  summary: A data subject asks how to exercise their rights
+  concept: FACT
+  test: BOOLEAN
+  level: REPRESENTATIVE_DUTIES
+  layer: CONDITION
+- id: FADP-15-3
+  provision: FADP 15(3)
+  summary: Representative tells data subjects how to exercise their rights
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: REPRESENTATIVE_DUTIES
+  layer: CORE
+  addressee: REPRESENTATIVE
+  applies_if_all: [FADP-14-1, FACT-15-3]
+- id: FACT-16-1
+  provision: FADP 16(1)
+  summary: Personal data are disclosed abroad
+  concept: FACT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: CONDITION
+  applies_if_all: [FADP-5-e]
+- id: FADP-16-1
+  provision: FADP 16(1); OPDo 8
+  summary: Disclosure abroad allowed if the Federal Council lists the State as adequate
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FACT-16-1]
+  sanctioned_by: [FADP-61-a]
+- id: FADP-16-2-a
+  provision: FADP 16(2)(a)
+  summary: 'Otherwise: guaranteed by a treaty'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+- id: FADP-16-2-b
+  provision: FADP 16(2)(b); OPDo 9
+  summary: 'Otherwise: contract clauses, FDPIC notified beforehand'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+- id: FADP-16-2-c
+  provision: FADP 16(2)(c)
+  summary: 'Otherwise: specific guarantees drawn up by the competent federal body, FDPIC notified beforehand'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+- id: FADP-16-2-d
+  provision: FADP 16(2)(d); OPDo 10
+  summary: 'Otherwise: FDPIC-approved standard clauses'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+- id: FADP-16-2-e
+  provision: FADP 16(2)(e); OPDo 11
+  summary: 'Otherwise: binding corporate rules approved in advance'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+- id: FADP-16-17
+  provision: FADP 16-17
+  summary: Register of disclosures abroad with the legal basis for each
+  concept: CONTROL_DEDUCED
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: CONTROL
+  serves: [FADP-16-1]
+- id: FADP-17-1-a
+  provision: FADP 17(1)(a)
+  summary: 'Exception: explicit consent'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_EXCEPTIONS
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+- id: FADP-17-1-b-1
+  provision: FADP 17(1)(b)(1)
+  summary: 'Exception: disclosure directly connected with a contract between the controller and the data subject'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DISCLOSURE_EXCEPTIONS
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+- id: FADP-17-1-b-2
+  provision: FADP 17(1)(b)(2)
+  summary: 'Exception: disclosure directly connected with a contract between the controller and its contractual partner in the interest of the data subject'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DISCLOSURE_EXCEPTIONS
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+- id: FADP-17-1-c-1
+  provision: FADP 17(1)(c)(1)
+  summary: 'Exception: disclosure necessary to safeguard an overriding public interest'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DISCLOSURE_EXCEPTIONS
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+- id: FADP-17-1-c-2
+  provision: FADP 17(1)(c)(2)
+  summary: 'Exception: disclosure necessary to establish, exercise or enforce legal rights before a court or foreign authority'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DISCLOSURE_EXCEPTIONS
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+- id: FADP-17-1-d
+  provision: FADP 17(1)(d)
+  summary: 'Exception: protect life or physical integrity, consent not obtainable in time'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DISCLOSURE_EXCEPTIONS
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+- id: FADP-17-1-e
+  provision: FADP 17(1)(e)
+  summary: 'Exception: data made public by the data subject, no prohibition'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DISCLOSURE_EXCEPTIONS
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+- id: FADP-17-1-f
+  provision: FADP 17(1)(f)
+  summary: 'Exception: data from a public statutory register'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DISCLOSURE_EXCEPTIONS
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+- id: FACT-17-2
+  provision: FADP 17(2)
+  summary: The FDPIC asks for information on a disclosure abroad
+  concept: FACT
+  test: BOOLEAN
+  level: DISCLOSURE_EXCEPTIONS
+  layer: CONDITION
+- id: FADP-17-2
+  provision: FADP 17(2)
+  summary: Inform the FDPIC on request about exceptions (b)(2), (c), (d)
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_EXCEPTIONS
+  layer: CORE
+  addressee: CONTROLLER_PROCESSOR
+  applies_if_all: [FACT-17-2]
+  applies_if_any: [FADP-17-1-b-2, FADP-17-1-c-1, FADP-17-1-c-2, FADP-17-1-d]
+- id: FADP-18
+  provision: FADP 18
+  summary: Publishing online for the public is not a disclosure abroad
+  concept: REQUIREMENT
+  test: PARTLY
+  level: ONLINE_PUBLICATION
+  layer: EXCEPTION
+  exception_to: [FACT-16-1]
+- id: FACT-19-1
+  provision: FADP 19(1)
+  summary: Personal data are not collected from the data subject
+  concept: FACT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONDITION
+- id: FADP-19-1-1
+  provision: FADP 19(1)
+  summary: Inform the data subject in an appropriate manner when collecting
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FADP-5-b]
+  sanctioned_by: [FADP-60-1-a, FADP-60-1-b]
+- id: FADP-19-1-2
+  provision: FADP 19(1)
+  summary: Same duty if data are not collected from the data subject
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FACT-19-1]
+- id: FADP-19-2-a
+  provision: FADP 19(2)(a)
+  summary: 'Inform: identity and contact of controller'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: PROPERTY
+  addressee: CONTROLLER
+  part_of: [FADP-19-1-1]
+  sanctioned_by: [FADP-60-1-a, FADP-60-1-b]
+- id: FADP-19-2-b
+  provision: FADP 19(2)(b)
+  summary: 'Inform: purpose'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: PROPERTY
+  addressee: CONTROLLER
+  part_of: [FADP-19-1-1]
+  sanctioned_by: [FADP-60-1-a, FADP-60-1-b]
+- id: FADP-19-2-c
+  provision: FADP 19(2)(c)
+  summary: 'Inform: recipients or categories, if any'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: PROPERTY
+  addressee: CONTROLLER
+  part_of: [FADP-19-1-1]
+  sanctioned_by: [FADP-60-1-a, FADP-60-1-b]
+- id: FADP-19-3
+  provision: FADP 19(3)
+  summary: 'Not collected from data subject: also inform data categories'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: PROPERTY
+  addressee: CONTROLLER
+  applies_if_all: [FACT-19-1]
+  part_of: [FADP-19-1-1]
+  sanctioned_by: [FADP-60-1-a]
+- id: FADP-19-4
+  provision: FADP 19(4)
+  summary: 'Disclosure abroad: also inform State and guarantees or exception'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: PROPERTY
+  addressee: CONTROLLER
+  applies_if_all: [FACT-16-1]
+  part_of: [FADP-19-1-1]
+  sanctioned_by: [FADP-60-1-a]
+- id: FADP-19-5
+  provision: FADP 19(5)
+  summary: 'Not collected from data subject: inform within one month, or at disclosure if earlier'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CORE
+  addressee: CONTROLLER
+  deadline: 1 MONTH
+  deadline_start: [DISCLOSURE_IF_EARLIER, RECEIPT_OF_DATA]
+  applies_if_all: [FACT-19-1]
+- id: FADP-19
+  provision: FADP 19
+  summary: Privacy notice for each collection channel
+  concept: CONTROL_DEDUCED
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONTROL
+  serves: [FADP-19-1-1]
+- id: FADP-20-1-a
+  provision: FADP 20(1)(a)
+  summary: No duty if the data subject already has the information
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  exception_to: [FADP-19-1-1]
+- id: FADP-20-1-b
+  provision: FADP 20(1)(b)
+  summary: No duty if the processing is required by law
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  exception_to: [FADP-19-1-1]
+- id: FADP-20-1-c
+  provision: FADP 20(1)(c)
+  summary: No duty if a legal confidentiality duty applies
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  exception_to: [FADP-19-1-1]
+- id: FADP-20-2-a
+  provision: FADP 20(2)(a)
+  summary: 'Not collected from data subject: no duty if impossible'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  applies_if_all: [FACT-19-1]
+  exception_to: [FADP-19-1-1]
+- id: FADP-20-2-b
+  provision: FADP 20(2)(b)
+  summary: 'Not collected from data subject: no duty if disproportionate effort'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  applies_if_all: [FACT-19-1]
+  exception_to: [FADP-19-1-1]
+- id: FADP-20-3-a
+  provision: FADP 20(3)(a)
+  summary: 'May restrict or delay: overriding third-party interests'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  exception_to: [FADP-19-1-1]
+- id: FADP-20-3-b
+  provision: FADP 20(3)(b)
+  summary: 'May restrict or delay: information defeats the purpose'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  exception_to: [FADP-19-1-1]
+- id: FADP-20-3-c-1
+  provision: FADP 20(3)(c)(1)
+  summary: 'May restrict or delay: own overriding interests'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  applies_if_all: [FADP-20-3-c-2]
+  exception_to: [FADP-19-1-1]
+- id: FADP-20-3-c-2
+  provision: FADP 20(3)(c)(2)
+  summary: Own interests only if no disclosure to third parties
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-20-4
+  provision: FADP 20(4)
+  summary: Group companies are not third parties
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: PROPERTY
+  limits: [FADP-20-3-c-2]
+- id: FADP-21-1-1
+  provision: FADP 21(1)
+  summary: 'Automated individual decision: exclusively automated, with legal effect or considerable adverse effect'
+  concept: ISSUE
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONDITION
+- id: FADP-21-1-2
+  provision: FADP 21(1)
+  summary: Inform the data subject of such a decision
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FADP-21-1-1]
+  sanctioned_by: [FADP-60-1-a, FADP-60-1-b]
+- id: FACT-21-2-1
+  provision: FADP 21(2)
+  summary: The data subject asks to state their point of view
+  concept: FACT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONDITION
+- id: FACT-21-2-2
+  provision: FADP 21(2)
+  summary: The data subject asks for review by a natural person
+  concept: FACT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONDITION
+- id: FADP-21-2-1
+  provision: FADP 21(2)
+  summary: On request, let the data subject state their view
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FADP-21-1-1, FACT-21-2-1]
+- id: FADP-21-2-2
+  provision: FADP 21(2)
+  summary: On request, review the decision by a natural person
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FADP-21-1-1, FACT-21-2-2]
+- id: FADP-21-3-a
+  provision: FADP 21(3)(a)
+  summary: 'Exception: tied to a contract and the request is granted'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  exception_to: [FADP-21-1-2, FADP-21-2-1, FADP-21-2-2]
+- id: FADP-21-3-b
+  provision: FADP 21(3)(b)
+  summary: 'Exception: explicit consent to automation'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  exception_to: [FADP-21-1-2, FADP-21-2-1, FADP-21-2-2]
+- id: FADP-21
+  provision: FADP 21
+  summary: Procedure for human review of automated decisions
+  concept: CONTROL_DEDUCED
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONTROL
+  serves: [FADP-21-2-1, FADP-21-2-2]
+- id: FADP-22-1-1
+  provision: FADP 22(1)
+  summary: Processing likely to result in a high risk
+  concept: RISK
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: ASSESSMENT
+- id: FADP-22-1-2
+  provision: FADP 22(1)
+  summary: Carry out a data protection impact assessment beforehand
+  concept: CONTROL_NAMED
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONTROL
+  addressee: CONTROLLER
+  applies_if_all: [FADP-22-1-1]
+- id: FADP-22-2
+  provision: FADP 22(2)
+  summary: High risk depends on nature, extent, circumstances, purpose
+  concept: CRITERION
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: ASSESSMENT
+  input_to: [FADP-22-1-1]
+- id: FADP-22-2-a
+  provision: FADP 22(2)(a)
+  summary: 'High risk: large-scale processing of sensitive data'
+  concept: RISK
+  test: PARTLY
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: ASSESSMENT
+  applies_if_any: [FADP-5-c-1, FADP-5-c-2, FADP-5-c-3, FADP-5-c-4, FADP-5-c-5, FADP-5-c-6]
+  example_of: [FADP-22-1-1]
+- id: FADP-22-2-b
+  provision: FADP 22(2)(b)
+  summary: 'High risk: large-scale systematic monitoring of public areas'
+  concept: RISK
+  test: PARTLY
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: ASSESSMENT
+  example_of: [FADP-22-1-1]
+- id: FADP-22-3-1
+  provision: FADP 22(3)
+  summary: Assessment describes the planned processing
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EVIDENCE
+  addressee: NOT_STATED
+  part_of: [FADP-22-1-2]
+- id: FADP-22-3-2
+  provision: FADP 22(3)
+  summary: Assessment evaluates the risks
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EVIDENCE
+  addressee: NOT_STATED
+  part_of: [FADP-22-1-2]
+- id: FADP-22-3-3
+  provision: FADP 22(3)
+  summary: Assessment describes the protective measures
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EVIDENCE
+  addressee: NOT_STATED
+  part_of: [FADP-22-1-2]
+- id: FADP-22-4
+  provision: FADP 22(4)
+  summary: Exempt if the controller is required by law to process
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  exception_to: [FADP-22-1-2]
+- id: FADP-22-5-1
+  provision: FADP 22(5)
+  summary: Exempt if the controller uses a system, product or service certified under art. 13 for the intended use
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  cites: [FADP-13]
+  exception_to: [FADP-22-1-2]
+- id: FADP-22-5-2
+  provision: FADP 22(5)
+  summary: Exempt if the controller complies with a code of conduct under art. 11
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  applies_if_all: [FADP-22-5-2-a, FADP-22-5-2-b, FADP-22-5-2-c]
+  cites: [FADP-11]
+  exception_to: [FADP-22-1-2]
+- id: FADP-22-5-2-a
+  provision: FADP 22(5)(a)
+  summary: Code of conduct is based on a data protection impact assessment
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-22-5-2-b
+  provision: FADP 22(5)(b)
+  summary: Code of conduct provides for measures to protect personality and fundamental rights
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-22-5-2-c
+  provision: FADP 22(5)(c)
+  summary: Code of conduct has been submitted to the FDPIC
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-23-1
+  provision: FADP 23(1)
+  summary: 'High risk remains despite measures: seek the FDPIC''s opinion beforehand'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FADP-22-1-2]
+- id: FACT-23-4
+  provision: FADP 23(4)
+  summary: The private controller has consulted the data protection officer
+  concept: FACT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONDITION
+- id: FADP-23-4
+  provision: FADP 23(4)
+  summary: Private controller may skip the FDPIC if the data protection officer was consulted
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  applies_if_all: [FADP-10-3-a, FADP-10-3-b, FADP-10-3-c, FADP-10-3-d, FACT-23-4]
+  exception_to: [FADP-23-1]
+- id: FADP-24-1-1
+  provision: FADP 24(1)
+  summary: Controller notifies the FDPIC
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FADP-5-h, FADP-24-1-2]
+- id: FADP-24-1-2
+  provision: FADP 24(1)
+  summary: Only if a high risk is likely
+  concept: RISK
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: ASSESSMENT
+- id: FADP-24-1-3
+  provision: FADP 24(1)
+  summary: As quickly as possible
+  concept: REQUIREMENT
+  test: UNDEFINED
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: PROPERTY
+  addressee: CONTROLLER
+  deadline: UNDEFINED
+  part_of: [FADP-24-1-1]
+- id: FADP-24-2-1
+  provision: FADP 24(2); OPDo 15(1)(a)
+  summary: Notification states the nature of the breach
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: PROPERTY
+  addressee: CONTROLLER
+  part_of: [FADP-24-1-1]
+- id: FADP-24-2-2
+  provision: FADP 24(2); OPDo 15(1)(e)
+  summary: Notification states the consequences
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: PROPERTY
+  addressee: CONTROLLER
+  part_of: [FADP-24-1-1]
+- id: FADP-24-2-3
+  provision: FADP 24(2); OPDo 15(1)(f)
+  summary: Notification states the measures taken or planned
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: PROPERTY
+  addressee: CONTROLLER
+  part_of: [FADP-24-1-1]
+- id: FADP-24-3-1
+  provision: FADP 24(3)
+  summary: Processor notifies the controller
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CORE
+  addressee: PROCESSOR
+  applies_if_all: [FADP-5-h, FADP-5-k]
+- id: FADP-24-3-2
+  provision: FADP 24(3)
+  summary: As quickly as possible
+  concept: REQUIREMENT
+  test: UNDEFINED
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: PROPERTY
+  addressee: PROCESSOR
+  deadline: UNDEFINED
+  part_of: [FADP-24-3-1]
+- id: FACT-24-4
+  provision: FADP 24(4)
+  summary: The FDPIC asks that the data subject be informed
+  concept: FACT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONDITION
+- id: FADP-24-4-1
+  provision: FADP 24(4)
+  summary: Controller informs the data subject if needed for their protection
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FADP-5-h]
+- id: FADP-24-4-2
+  provision: FADP 24(4)
+  summary: Controller informs the data subject if the FDPIC requests
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FADP-5-h, FACT-24-4]
+- id: FADP-24-5-a
+  provision: FADP 24(5)(a)
+  summary: 'May limit, delay or dispense with notice: art. 26 grounds or confidentiality duty'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  cites: [FADP-26-1-b]
+  exception_to: [FADP-24-4-1, FADP-24-4-2]
+- id: FADP-24-5-b
+  provision: FADP 24(5)(b)
+  summary: 'May limit, delay or dispense with notice: impossible or disproportionate effort'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  exception_to: [FADP-24-4-1, FADP-24-4-2]
+- id: FADP-24-5-c
+  provision: FADP 24(5)(c)
+  summary: 'May limit, delay or dispense with notice: public announcement is equivalent'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  exception_to: [FADP-24-4-1, FADP-24-4-2]
+- id: FADP-24-6
+  provision: FADP 24(6)
+  summary: Notification usable in criminal proceedings only with consent
+  concept: LEGAL_EFFECT
+  test: NONE
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONSEQUENCE
+  limits: [FADP-24-1-1]
+- id: FADP-24
+  provision: FADP 24
+  summary: 'Breach response procedure: who judges the risk, who notifies, who informs'
+  concept: CONTROL_DEDUCED
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: CONTROL
+  serves: [FADP-24-1-1, FADP-24-4-1]
+- id: FACT-25-1
+  provision: FADP 25(1)
+  summary: A person asks the controller whether their data are processed
+  concept: FACT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CONDITION
+- id: FADP-25-1
+  provision: FADP 25(1)
+  summary: Tell any requester whether their data are processed
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FACT-25-1]
+  sanctioned_by: [FADP-60-1-a]
+- id: FADP-25-2-a
+  provision: FADP 25(2)(a)
+  summary: 'Access answer contains: identity and contact of controller'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: PROPERTY
+  addressee: NOT_STATED
+  part_of: [FADP-25-1]
+  sanctioned_by: [FADP-60-1-a]
+- id: FADP-25-2-b
+  provision: FADP 25(2)(b)
+  summary: 'Access answer contains: the processed data as such'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: PROPERTY
+  addressee: NOT_STATED
+  part_of: [FADP-25-1]
+  sanctioned_by: [FADP-60-1-a]
+- id: FADP-25-2-c
+  provision: FADP 25(2)(c)
+  summary: 'Access answer contains: purpose'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: PROPERTY
+  addressee: NOT_STATED
+  part_of: [FADP-25-1]
+  sanctioned_by: [FADP-60-1-a]
+- id: FADP-25-2-d
+  provision: FADP 25(2)(d)
+  summary: 'Access answer contains: retention period or criteria'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DATA_SUBJECT_RIGHTS
+  layer: PROPERTY
+  addressee: NOT_STATED
+  part_of: [FADP-25-1]
+  sanctioned_by: [FADP-60-1-a]
+- id: FADP-25-2-e
+  provision: FADP 25(2)(e)
+  summary: 'Access answer contains: source, if not collected from the data subject'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DATA_SUBJECT_RIGHTS
+  layer: PROPERTY
+  addressee: NOT_STATED
+  applies_if_all: [FACT-19-1]
+  part_of: [FADP-25-1]
+  sanctioned_by: [FADP-60-1-a]
+- id: FADP-25-2-f
+  provision: FADP 25(2)(f)
+  summary: 'Access answer contains: automated decision and its logic, if any'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DATA_SUBJECT_RIGHTS
+  layer: PROPERTY
+  addressee: NOT_STATED
+  applies_if_all: [FADP-21-1-1]
+  part_of: [FADP-25-1]
+  sanctioned_by: [FADP-60-1-a]
+- id: FADP-25-2-g-1
+  provision: FADP 25(2)(g)
+  summary: 'Access answer contains: recipients or categories of recipients, if any'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DATA_SUBJECT_RIGHTS
+  layer: PROPERTY
+  addressee: NOT_STATED
+  part_of: [FADP-25-1]
+  sanctioned_by: [FADP-60-1-a]
+- id: FADP-25-2-g-2
+  provision: FADP 25(2)(g)
+  summary: 'Access answer contains: art. 19(4) information, if any'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DATA_SUBJECT_RIGHTS
+  layer: PROPERTY
+  addressee: NOT_STATED
+  cites: [FADP-19-4]
+  part_of: [FADP-25-1]
+  sanctioned_by: [FADP-60-1-a]
+- id: FADP-25-4
+  provision: FADP 25(4)
+  summary: Controller stays responsible when a processor is used
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FACT-9-1]
+- id: FADP-25-5
+  provision: FADP 25(5)
+  summary: Right of access cannot be waived in advance
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: PROPERTY
+  addressee: NOT_STATED
+  limits: [FADP-25-1]
+- id: FADP-25-6
+  provision: FADP 25(6)
+  summary: Information is free of charge
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: PROPERTY
+  addressee: CONTROLLER
+  limits: [FADP-25-1]
+- id: FADP-25-7
+  provision: FADP 25(7); OPDo 18(1)
+  summary: Information within 30 days
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: PROPERTY
+  addressee: NOT_STATED
+  deadline: 30 DAYS
+  deadline_start: RECEIPT_OF_REQUEST
+  limits: [FADP-25-1]
+- id: FADP-25
+  provision: FADP 25; 28
+  summary: Request procedure with a 30-day clock
+  concept: CONTROL_DEDUCED
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CONTROL
+  serves: [FADP-25-1, FADP-25-7]
+- id: FADP-26-1-a
+  provision: FADP 26(1)(a)
+  summary: 'May refuse access: formal law, e.g. professional secrecy'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  exception_to: [FADP-25-1]
+- id: FADP-26-1-b
+  provision: FADP 26(1)(b)
+  summary: 'May refuse access: overriding third-party interests'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SUBJECT_RIGHTS
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  exception_to: [FADP-25-1]
+- id: FADP-26-1-c
+  provision: FADP 26(1)(c)
+  summary: 'May refuse access: obviously unjustified request'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SUBJECT_RIGHTS
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  exception_to: [FADP-25-1]
+- id: FADP-26-2-a-1
+  provision: FADP 26(2)(a)(1)
+  summary: 'May refuse access: own overriding interests'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SUBJECT_RIGHTS
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  applies_if_all: [FADP-26-2-a-2]
+  exception_to: [FADP-25-1]
+- id: FADP-26-2-a-2
+  provision: FADP 26(2)(a)(2)
+  summary: Own interests only if no disclosure to third parties
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-26-3
+  provision: FADP 26(3)
+  summary: Group companies are not third parties
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: PROPERTY
+  limits: [FADP-26-2-a-2]
+- id: FADP-26-4
+  provision: FADP 26(4)
+  summary: State why access is refused, restricted or delayed
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_any: [FADP-26-1-a, FADP-26-1-b, FADP-26-1-c, FADP-26-2-a-1]
+- id: FACT-28-1
+  provision: FADP 28(1)
+  summary: A person asks the controller to deliver their data
+  concept: FACT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CONDITION
+- id: FADP-28-1
+  provision: FADP 28(1)
+  summary: Deliver the data the person disclosed, in a conventional electronic format
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FACT-28-1, FADP-28-1-a, FADP-28-1-b]
+- id: FADP-28-1-a
+  provision: FADP 28(1)(a)
+  summary: 'Portability: controller processes the data automatically'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-28-1-b
+  provision: FADP 28(1)(b)
+  summary: 'Portability: consent or direct link to a contract'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FACT-28-2
+  provision: FADP 28(2)
+  summary: A person asks the controller to transfer their data to another controller
+  concept: FACT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CONDITION
+- id: FADP-28-2
+  provision: FADP 28(2)
+  summary: Transfer to another controller if no disproportionate effort
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SUBJECT_RIGHTS
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FADP-28-1-a, FADP-28-1-b, FACT-28-2]
+- id: FADP-28-3
+  provision: FADP 28(3)
+  summary: Delivery or transfer is free of charge
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: PROPERTY
+  addressee: CONTROLLER
+  limits: [FADP-28-1, FADP-28-2]
+- id: FADP-29-1
+  provision: FADP 29(1)
+  summary: May refuse portability on the grounds of art. 26
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SUBJECT_RIGHTS
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  cites: [FADP-26-1-a, FADP-26-1-b, FADP-26-1-c, FADP-26-2-a-1]
+  exception_to: [FADP-28-1, FADP-28-2]
+- id: FADP-29-2
+  provision: FADP 29(2)
+  summary: State why portability is refused, restricted or delayed
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_any: [FADP-29-1]
+- id: FADP-30-1
+  provision: FADP 30(1)
+  summary: Do not unlawfully breach personality rights
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: PERSONALITY_BREACHES
+  layer: CORE
+  addressee: ANY_PERSON
+  applies_if_all: [FADP-5-a, FADP-5-d]
+  leads_to: [FADP-32-2]
+- id: FADP-30-2-a
+  provision: FADP 30(2)(a)
+  summary: 'Breach: processing against arts 6 and 8'
+  concept: LEGAL_EFFECT
+  test: ASSESSMENT
+  level: PERSONALITY_BREACHES
+  layer: CONSEQUENCE
+  cites: [FADP-6-1, FADP-6-2-1, FADP-6-2-2, FADP-6-3-1, FADP-6-3-2, FADP-6-4-1, FADP-6-5-1, FADP-6-5-2, FADP-6-6-1, FADP-6-6-2, FADP-6-6-3, FADP-6-7-a, FADP-6-7-b, FADP-8-1, FADP-8-2]
+  example_of: [FADP-30-1]
+- id: FADP-30-2-b
+  provision: FADP 30(2)(b)
+  summary: 'Breach: processing against the data subject''s express wishes'
+  concept: LEGAL_EFFECT
+  test: BOOLEAN
+  level: PERSONALITY_BREACHES
+  layer: CONSEQUENCE
+  example_of: [FADP-30-1]
+- id: FADP-30-2-c
+  provision: FADP 30(2)(c)
+  summary: 'Breach: disclosing sensitive data to third parties'
+  concept: LEGAL_EFFECT
+  test: BOOLEAN
+  level: PERSONALITY_BREACHES
+  layer: CONSEQUENCE
+  applies_if_all: [FADP-5-e]
+  applies_if_any: [FADP-5-c-1, FADP-5-c-2, FADP-5-c-3, FADP-5-c-4, FADP-5-c-5, FADP-5-c-6]
+  example_of: [FADP-30-1]
+- id: FADP-30-3
+  provision: FADP 30(3)
+  summary: Usually no breach if the data subject made the data public and did not prohibit processing
+  concept: REQUIREMENT
+  test: PARTLY
+  level: PERSONALITY_BREACHES
+  layer: EXCEPTION
+  exception_to: [FADP-30-1]
+- id: FADP-31-1
+  provision: FADP 31(1)
+  summary: Breach is unlawful unless justified by consent, overriding interest or law
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: JUSTIFICATION_GROUNDS
+  layer: EXCEPTION
+  exception_to: [FADP-30-1]
+- id: FADP-31-2-a
+  provision: FADP 31(2)(a)
+  summary: 'Justification: contract with the data subject'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: JUSTIFICATION_GROUNDS
+  layer: PROPERTY
+  addressee: CONTROLLER
+  example_of: [FADP-31-1]
+- id: FADP-31-2-b
+  provision: FADP 31(2)(b)
+  summary: 'Justification: commercial competition'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: JUSTIFICATION_GROUNDS
+  layer: PROPERTY
+  addressee: CONTROLLER
+  applies_if_all: [FADP-31-2-b-1, FADP-31-2-b-2, FADP-31-2-b-3]
+  example_of: [FADP-31-1]
+- id: FADP-31-2-b-1
+  provision: FADP 31(2)(b)
+  summary: 'Competition ground: the controller is or intends to be in commercial competition with another person'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: JUSTIFICATION_GROUNDS
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-31-2-b-2
+  provision: FADP 31(2)(b)
+  summary: 'Competition ground: the data are processed for that purpose'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: JUSTIFICATION_GROUNDS
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-31-2-b-3
+  provision: FADP 31(2)(b)
+  summary: 'Competition ground: the data are not disclosed to third parties'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: JUSTIFICATION_GROUNDS
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-31-2-b-4
+  provision: FADP 31(2)(b)
+  summary: 'Competition ground: group companies are not third parties'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: JUSTIFICATION_GROUNDS
+  layer: PROPERTY
+  addressee: CONTROLLER
+  limits: [FADP-31-2-b-3]
+- id: FADP-31-2-c
+  provision: FADP 31(2)(c)
+  summary: 'Justification: creditworthiness check'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: JUSTIFICATION_GROUNDS
+  layer: PROPERTY
+  addressee: CONTROLLER
+  applies_if_all: [FADP-31-2-c-1, FADP-31-2-c-2, FADP-31-2-c-3, FADP-31-2-c-4]
+  example_of: [FADP-31-1]
+- id: FADP-31-2-c-1
+  provision: FADP 31(2)(c)(1)
+  summary: 'Credit check: no sensitive data, no high-risk profiling'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: JUSTIFICATION_GROUNDS
+  layer: CONDITION
+  addressee: CONTROLLER
+  cites: [FADP-5-c-1, FADP-5-c-2, FADP-5-c-3, FADP-5-c-4, FADP-5-c-5, FADP-5-c-6, FADP-5-g]
+- id: FADP-31-2-c-2
+  provision: FADP 31(2)(c)(2)
+  summary: 'Credit check: disclosure only to those needing it for a contract'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: JUSTIFICATION_GROUNDS
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-31-2-c-3
+  provision: FADP 31(2)(c)(3)
+  summary: 'Credit check: data no more than 10 years old'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: JUSTIFICATION_GROUNDS
+  layer: CONDITION
+  addressee: CONTROLLER
+  threshold: AT_MOST 10 YEARS
+- id: FADP-31-2-c-4
+  provision: FADP 31(2)(c)(4)
+  summary: 'Credit check: data subject is of age'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: JUSTIFICATION_GROUNDS
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-31-2-e
+  provision: FADP 31(2)(e)
+  summary: 'Justification: processing for purposes not related to specific persons (research, planning, statistics)'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: JUSTIFICATION_GROUNDS
+  layer: PROPERTY
+  addressee: CONTROLLER
+  applies_if_all: [FADP-31-2-e-1, FADP-31-2-e-2, FADP-31-2-e-3]
+  example_of: [FADP-31-1]
+- id: FADP-31-2-e-1
+  provision: FADP 31(2)(e)(1)
+  summary: Data anonymised as soon as the purpose permits, or measures taken to prevent identification
+  concept: REQUIREMENT
+  test: PARTLY
+  level: JUSTIFICATION_GROUNDS
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-31-2-e-2
+  provision: FADP 31(2)(e)(2)
+  summary: Sensitive data disclosed so that the data subject is not identifiable, or third parties bound to unrelated purposes
+  concept: REQUIREMENT
+  test: PARTLY
+  level: JUSTIFICATION_GROUNDS
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-31-2-e-3
+  provision: FADP 31(2)(e)(3)
+  summary: Results published so that data subjects are not identifiable
+  concept: REQUIREMENT
+  test: PARTLY
+  level: JUSTIFICATION_GROUNDS
+  layer: CONDITION
+  addressee: CONTROLLER
+- id: FADP-31-2-f
+  provision: FADP 31(2)(f)
+  summary: 'Justification: public figure''s public activities'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: JUSTIFICATION_GROUNDS
+  layer: PROPERTY
+  addressee: CONTROLLER
+  example_of: [FADP-31-1]
+- id: FACT-32-1
+  provision: FADP 32(1)
+  summary: The data subject asks for correction of incorrect data
+  concept: FACT
+  test: BOOLEAN
+  level: LEGAL_RIGHTS
+  layer: CONDITION
+- id: FADP-32-1
+  provision: FADP 32(1)
+  summary: Correct incorrect data on request
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: LEGAL_RIGHTS
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FACT-32-1]
+- id: FADP-32-2
+  provision: FADP 32(2)
+  summary: Data subject may seek prohibition of processing or disclosure, or deletion
+  concept: LEGAL_EFFECT
+  test: NONE
+  level: LEGAL_RIGHTS
+  layer: CONSEQUENCE
+- id: FACT-32-3
+  provision: FADP 32(3)
+  summary: Neither the accuracy nor the inaccuracy of the data can be established
+  concept: FACT
+  test: BOOLEAN
+  level: LEGAL_RIGHTS
+  layer: CONDITION
+- id: FADP-32-3
+  provision: FADP 32(3)
+  summary: Mark data as disputed if accuracy cannot be established
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: LEGAL_RIGHTS
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FACT-32-3]
+- id: FACT-32-4
+  provision: FADP 32(4)
+  summary: The applicant asks that a measure be communicated to third parties
+  concept: FACT
+  test: BOOLEAN
+  level: LEGAL_RIGHTS
+  layer: CONDITION
+- id: FADP-32-4
+  provision: FADP 32(4)
+  summary: Tell third parties of correction, deletion, prohibition or dispute on request
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: LEGAL_RIGHTS
+  layer: CORE
+  addressee: NOT_STATED
+  applies_if_all: [FACT-32-4]
+- id: FADP-32
+  provision: FADP 32
+  summary: Procedure to correct, delete, block or mark data on request
+  concept: CONTROL_DEDUCED
+  test: BOOLEAN
+  level: LEGAL_RIGHTS
+  layer: CONTROL
+  serves: [FADP-32-1, FADP-32-3, FADP-32-4]
+- id: FACT-49-1
+  provision: FADP 49(1)
+  summary: The FDPIC has opened an investigation
+  concept: FACT
+  test: BOOLEAN
+  level: INVESTIGATION
+  layer: CONDITION
+- id: FADP-49-3-1
+  provision: FADP 49(3)
+  summary: Give the FDPIC all information and documents needed
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: INVESTIGATION
+  layer: CORE
+  addressee: PRIVATE_PERSON
+  applies_if_all: [FACT-49-1]
+  sanctioned_by: [FADP-60-2]
+- id: FADP-49-3-2
+  provision: FADP 49(3)
+  summary: Single contact point for FDPIC requests
+  concept: CONTROL_DEDUCED
+  test: BOOLEAN
+  level: INVESTIGATION
+  layer: CONTROL
+  serves: [FADP-49-3-1]
+- id: FADP-60-1-a
+  provision: FADP 60(1)(a)
+  summary: 'Fine up to CHF 250,000 if wilful: false or incomplete information (arts 19, 21, 25-27)'
+  concept: RISK
+  test: NONE
+  level: CRIMINAL_PROVISIONS
+  layer: CONSEQUENCE
+  addressee: PRIVATE_PERSON
+  fault: WILFUL
+  max_amount: CHF 250000
+  prosecution: ON_COMPLAINT
+- id: FADP-60-1-b
+  provision: FADP 60(1)(b)
+  summary: 'Fine up to CHF 250,000 if wilful: failure to inform (arts 19(1), 19(2), 21(1))'
+  concept: RISK
+  test: NONE
+  level: CRIMINAL_PROVISIONS
+  layer: CONSEQUENCE
+  addressee: PRIVATE_PERSON
+  fault: WILFUL
+  max_amount: CHF 250000
+  prosecution: ON_COMPLAINT
+- id: FADP-60-2
+  provision: FADP 60(2)
+  summary: 'Fine up to CHF 250,000 if wilful: false information to, or no cooperation with, the FDPIC (no complaint needed)'
+  concept: RISK
+  test: NONE
+  level: CRIMINAL_PROVISIONS
+  layer: CONSEQUENCE
+  addressee: PRIVATE_PERSON
+  fault: WILFUL
+  max_amount: CHF 250000
+  prosecution: NOT_STATED
+- id: FADP-61-a
+  provision: FADP 61(a)
+  summary: 'Fine up to CHF 250,000 if wilful: disclosure abroad against arts 16-17'
+  concept: RISK
+  test: NONE
+  level: CRIMINAL_PROVISIONS
+  layer: CONSEQUENCE
+  addressee: PRIVATE_PERSON
+  fault: WILFUL
+  max_amount: CHF 250000
+  prosecution: ON_COMPLAINT
+- id: FADP-61-b
+  provision: FADP 61(b)
+  summary: 'Fine up to CHF 250,000 if wilful: assignment to a processor against art. 9(1)-(2)'
+  concept: RISK
+  test: NONE
+  level: CRIMINAL_PROVISIONS
+  layer: CONSEQUENCE
+  addressee: PRIVATE_PERSON
+  fault: WILFUL
+  max_amount: CHF 250000
+  prosecution: ON_COMPLAINT
+- id: FADP-61-c
+  provision: FADP 61(c)
+  summary: 'Fine up to CHF 250,000 if wilful: minimum security requirements not met (art. 8(3))'
+  concept: RISK
+  test: NONE
+  level: CRIMINAL_PROVISIONS
+  layer: CONSEQUENCE
+  addressee: PRIVATE_PERSON
+  fault: WILFUL
+  max_amount: CHF 250000
+  prosecution: ON_COMPLAINT
+- id: FADP-62
+  provision: FADP 62
+  summary: 'Fine up to CHF 250,000 if wilful: disclosure of secret data by a person bound by professional secrecy'
+  concept: RISK
+  test: NONE
+  level: CRIMINAL_PROVISIONS
+  layer: CONSEQUENCE
+  addressee: ANY_PERSON
+  fault: WILFUL
+  max_amount: CHF 250000
+  prosecution: ON_COMPLAINT
+- id: FADP-63
+  provision: FADP 63
+  summary: 'Fine up to CHF 250,000 if wilful: disregard of an FDPIC ruling'
+  concept: RISK
+  test: NONE
+  level: CRIMINAL_PROVISIONS
+  layer: CONSEQUENCE
+  addressee: PRIVATE_PERSON
+  fault: WILFUL
+  max_amount: CHF 250000
+  prosecution: NOT_STATED
+- id: FADP-64
+  provision: FADP 64
+  summary: Business fined instead of the person, if fine up to CHF 50,000
+  concept: RISK
+  test: NONE
+  level: CRIMINAL_PROVISIONS
+  layer: CONSEQUENCE
+  addressee: BUSINESS
+  max_amount: CHF 50000
+  applies_if_any: [FADP-60-1-a, FADP-60-1-b, FADP-60-2, FADP-61-a, FADP-61-b, FADP-61-c, FADP-62, FADP-63]
+- id: FADP-66
+  provision: FADP 66
+  summary: 'Prosecution time limit: 5 years'
+  concept: RISK
+  test: NONE
+  level: CRIMINAL_PROVISIONS
+  layer: CONSEQUENCE
+  time_limit: 5 YEARS
+  applies_if_any: [FADP-60-1-a, FADP-60-1-b, FADP-60-2, FADP-61-a, FADP-61-b, FADP-61-c, FADP-62, FADP-63]
+- id: FADP-69
+  provision: FADP 69
+  summary: Arts 7, 22, 23 do not apply to processing begun before 1 Sept 2023 if purpose and data unchanged
+  concept: REQUIREMENT
+  test: PARTLY
+  level: TRANSITIONAL_PROVISIONS
+  layer: EXCEPTION
+  reference_date: 1 SEPTEMBER 2023
+  exception_to: [FADP-7-1-1, FADP-7-1-2, FADP-7-2, FADP-7-3, FADP-22-1-2, FADP-23-1]
+- id: OPDo-1-1
+  provision: OPDo 1(1)
+  summary: Assess the need for protection and choose measures appropriate to the risk
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+- id: OPDo-1-2-a
+  provision: OPDo 1(2)(a)
+  summary: 'Need for protection: type of data'
+  concept: CRITERION
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: ASSESSMENT
+  input_to: [OPDo-1-1]
+- id: OPDo-1-2-b
+  provision: OPDo 1(2)(b)
+  summary: 'Need for protection: purpose, nature, extent, circumstances'
+  concept: CRITERION
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: ASSESSMENT
+  input_to: [OPDo-1-1]
+- id: OPDo-1-3-a
+  provision: OPDo 1(3)(a)
+  summary: 'Risk: causes'
+  concept: RISK
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: ASSESSMENT
+  input_to: [OPDo-1-1]
+- id: OPDo-1-3-b
+  provision: OPDo 1(3)(b)
+  summary: 'Risk: main threats'
+  concept: RISK
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: ASSESSMENT
+  input_to: [OPDo-1-1]
+- id: OPDo-1-3-c
+  provision: OPDo 1(3)(c)
+  summary: 'Risk: measures taken or planned'
+  concept: CRITERION
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: ASSESSMENT
+  input_to: [OPDo-1-1]
+- id: OPDo-1-3-d
+  provision: OPDo 1(3)(d)
+  summary: 'Risk: probability and severity of a breach despite the measures'
+  concept: RISK
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: ASSESSMENT
+  input_to: [OPDo-1-1]
+- id: OPDo-1-4
+  provision: OPDo 1(4)
+  summary: Measures also take account of state of the art and cost
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-8-1]
+- id: OPDo-1-5-1
+  provision: OPDo 1(5)
+  summary: Reassess need, risk and measures during the whole processing
+  concept: CONTROL_NAMED
+  test: UNDEFINED
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: NOT_STATED
+  implements: [FADP-8-1]
+- id: OPDo-1-5-2
+  provision: OPDo 1(5)
+  summary: Adapt the measures when needed
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-8-1]
+- id: OPDo-2-a
+  provision: OPDo 2(a)
+  summary: 'Security objective, confidentiality: only authorised persons have access'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+- id: OPDo-2-b
+  provision: OPDo 2(b)
+  summary: 'Security objective, availability: data available when needed'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+- id: OPDo-2-c
+  provision: OPDo 2(c)
+  summary: 'Security objective, integrity: no unauthorised or accidental change'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+- id: OPDo-2-d
+  provision: OPDo 2(d)
+  summary: 'Security objective, traceability: processing can be traced'
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+- id: OPDo-3-1-a
+  provision: OPDo 3(1)(a)
+  summary: 'Access control: users reach only the data they need'
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+  serves: [OPDo-2-a]
+- id: OPDo-3-1-b
+  provision: OPDo 3(1)(b)
+  summary: 'Premises control: only authorised persons enter premises and installations'
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+  serves: [OPDo-2-a]
+- id: OPDo-3-1-c
+  provision: OPDo 3(1)(c)
+  summary: 'Use control: unauthorised persons cannot use the systems via transmission installations'
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+  serves: [OPDo-2-a]
+- id: OPDo-3-2-a
+  provision: OPDo 3(2)(a)
+  summary: 'Data carrier control: no unauthorised reading, copying, change or destruction'
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+  serves: [OPDo-2-b, OPDo-2-c]
+- id: OPDo-3-2-b
+  provision: OPDo 3(2)(b)
+  summary: 'Storage control: no unauthorised entry, reading, change or erasure in memory'
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+  serves: [OPDo-2-b, OPDo-2-c]
+- id: OPDo-3-2-c
+  provision: OPDo 3(2)(c)
+  summary: 'Transport control: no unauthorised access during communication or carrier transport'
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+  serves: [OPDo-2-b, OPDo-2-c]
+- id: OPDo-3-2-d
+  provision: OPDo 3(2)(d)
+  summary: 'Restoration: availability and access restored quickly after an incident'
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+  serves: [OPDo-2-b, OPDo-2-c]
+- id: OPDo-3-2-e
+  provision: OPDo 3(2)(e)
+  summary: 'Availability, reliability, data integrity: functions available, malfunctions reported, stored data protected'
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+  serves: [OPDo-2-b, OPDo-2-c]
+- id: OPDo-3-2-f
+  provision: OPDo 3(2)(f)
+  summary: 'System security: systems and software kept up to date, known critical gaps closed'
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+  serves: [OPDo-2-b, OPDo-2-c]
+- id: OPDo-3-3-a
+  provision: OPDo 3(3)(a)
+  summary: 'Input control: it can be verified who entered or changed which data and when'
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+  serves: [OPDo-2-d]
+- id: OPDo-3-3-b
+  provision: OPDo 3(3)(b)
+  summary: 'Disclosure control: it can be verified to whom data were communicated'
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+  serves: [OPDo-2-d]
+- id: OPDo-3-3-c
+  provision: OPDo 3(3)(c)
+  summary: 'Detection and repair: breaches detected quickly, consequences mitigated or removed'
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+  serves: [OPDo-2-d]
+- id: OPDo-4-1-1
+  provision: OPDo 4(1)
+  summary: Logging applies to automated processing of sensitive data on a large scale or high-risk profiling
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER_PROCESSOR
+  applies_if_any: [FADP-5-c-1, FADP-5-c-2, FADP-5-c-3, FADP-5-c-4, FADP-5-c-5, FADP-5-c-6, FADP-5-g]
+  implements: [FADP-8-1]
+- id: OPDo-4-1-2
+  provision: OPDo 4(1)
+  summary: Logging applies where preventive measures do not suffice
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SECURITY
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+- id: OPDo-4-1-3
+  provision: OPDo 4(1)
+  summary: Log at least recording, change, reading, disclosure, deletion, destruction
+  concept: CONTROL_NAMED
+  test: BOOLEAN
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  applies_if_all: [OPDo-4-1-1, OPDo-4-1-2]
+  implements: [FADP-8-1]
+- id: OPDo-4-4
+  provision: OPDo 4(4)
+  summary: Log shows who, what, when and, if any, the recipient
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: DATA_SECURITY
+  layer: EVIDENCE
+  addressee: NOT_STATED
+  implements: [FADP-8-1]
+  part_of: [OPDo-4-1-3]
+- id: OPDo-4-5-1
+  provision: OPDo 4(5)
+  summary: Logs kept at least 1 year
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: DATA_SECURITY
+  layer: EVIDENCE
+  addressee: NOT_STATED
+  retention_min: 1 YEAR
+  retention_start: NOT_STATED
+  implements: [FADP-8-1]
+  part_of: [OPDo-4-1-3]
+- id: OPDo-4-5-2
+  provision: OPDo 4(5)
+  summary: Logs kept apart from the processing system
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: DATA_SECURITY
+  layer: EVIDENCE
+  addressee: NOT_STATED
+  implements: [FADP-8-1]
+  part_of: [OPDo-4-1-3]
+- id: OPDo-4-5-3-1
+  provision: OPDo 4(5)
+  summary: Logs open only to those who check compliance or preserve or restore confidentiality, integrity, availability, traceability
+  concept: CONTROL_NAMED
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: NOT_STATED
+  implements: [FADP-8-1]
+  part_of: [OPDo-4-1-3]
+- id: OPDo-4-5-3-2
+  provision: OPDo 4(5)
+  summary: Logs used only for that purpose
+  concept: CONTROL_NAMED
+  test: BOOLEAN
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: NOT_STATED
+  implements: [FADP-8-1]
+  part_of: [OPDo-4-1-3]
+- id: OPDo-5-1-1
+  provision: OPDo 5(1)
+  summary: Processing policy applies to automated processing of sensitive data on a large scale or high-risk profiling
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DATA_SECURITY
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER_PROCESSOR
+  applies_if_any: [FADP-5-c-1, FADP-5-c-2, FADP-5-c-3, FADP-5-c-4, FADP-5-c-5, FADP-5-c-6, FADP-5-g]
+  implements: [FADP-8-1]
+- id: OPDo-5-1-2
+  provision: OPDo 5(1)
+  summary: Draw up a processing policy
+  concept: CONTROL_NAMED
+  test: BOOLEAN
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  applies_if_all: [OPDo-5-1-1]
+  implements: [FADP-8-1]
+- id: OPDo-5-2
+  provision: OPDo 5(2)
+  summary: Policy covers internal organisation, data and control procedures, security measures
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: DATA_SECURITY
+  layer: EVIDENCE
+  addressee: NOT_STATED
+  implements: [FADP-8-1]
+  part_of: [OPDo-5-1-2]
+- id: OPDo-5-3-1
+  provision: OPDo 5(3)
+  summary: Update the policy regularly
+  concept: CONTROL_NAMED
+  test: UNDEFINED
+  level: DATA_SECURITY
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-8-1]
+  part_of: [OPDo-5-1-2]
+- id: OPDo-5-3-2
+  provision: OPDo 5(3)
+  summary: Give the policy to the data protection officer, if one is appointed
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SECURITY
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER_PROCESSOR
+  applies_if_all: [FACT-10-1]
+  implements: [FADP-8-1]
+  part_of: [OPDo-5-1-2]
+- id: OPDo-7-1
+  provision: OPDo 7(1)
+  summary: Approval may be specific or general
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: PROCESSORS
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-9-3]
+- id: FACT-OPDo-7-2
+  provision: OPDo 7(2)
+  summary: The approval of the controller is general
+  concept: FACT
+  test: BOOLEAN
+  level: PROCESSORS
+  layer: CONDITION
+- id: OPDo-7-2-1
+  provision: OPDo 7(2)
+  summary: 'General approval: processor informs the controller when it plans to involve or replace third parties'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: PROCESSORS
+  layer: IMPLEMENTATION
+  addressee: PROCESSOR
+  applies_if_all: [FACT-OPDo-7-2]
+  implements: [FADP-9-3]
+- id: OPDo-7-2-2
+  provision: OPDo 7(2)
+  summary: 'General approval: controller may object to the change'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: PROCESSORS
+  layer: IMPLEMENTATION
+  addressee: PROCESSOR
+  applies_if_all: [FACT-OPDo-7-2]
+  implements: [FADP-9-3]
+- id: OPDo-9-1-a
+  provision: OPDo 9(1)(a)
+  summary: 'Clauses state: principles of lawfulness, good faith, proportionality, transparency, purpose and accuracy applied'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-9-1-b
+  provision: OPDo 9(1)(b)
+  summary: 'Clauses state: categories of data and of data subjects'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-9-1-c
+  provision: OPDo 9(1)(c)
+  summary: 'Clauses state: type and purpose of the disclosure'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-9-1-d
+  provision: OPDo 9(1)(d)
+  summary: 'Clauses state: recipient States or international bodies and disclosure conditions, where applicable'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-9-1-e
+  provision: OPDo 9(1)(e)
+  summary: 'Clauses state: conditions for retention, deletion and destruction'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-9-1-f
+  provision: OPDo 9(1)(f)
+  summary: 'Clauses state: recipients or categories of recipients'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-9-1-g
+  provision: OPDo 9(1)(g)
+  summary: 'Clauses state: data security measures'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-9-1-h
+  provision: OPDo 9(1)(h)
+  summary: 'Clauses state: duty to report breaches of data security'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-9-1-i
+  provision: OPDo 9(1)(i)
+  summary: 'Clauses state: recipient''s duty to inform data subjects, where the recipient is a controller'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-9-1-j-1
+  provision: OPDo 9(1)(j)(1)
+  summary: 'Clauses state: right of access and right to delivery or transfer of data'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-9-1-j-2
+  provision: OPDo 9(1)(j)(2)
+  summary: 'Clauses state: right to object to disclosure'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-9-1-j-3
+  provision: OPDo 9(1)(j)(3)
+  summary: 'Clauses state: right to correction, deletion or destruction'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-9-1-j-4
+  provision: OPDo 9(1)(j)(4)
+  summary: 'Clauses state: right to bring the matter before an independent authority'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-9-2
+  provision: OPDo 9(2)
+  summary: Take measures so the recipient complies
+  concept: CONTROL_NAMED
+  test: ASSESSMENT
+  level: DISCLOSURE_PRINCIPLES
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-16-2-b, FADP-16-2-c]
+- id: OPDo-10-1
+  provision: OPDo 10(1)
+  summary: Take measures so the recipient respects the standard clauses
+  concept: CONTROL_NAMED
+  test: ASSESSMENT
+  level: DISCLOSURE_PRINCIPLES
+  layer: CONTROL
+  addressee: CONTROLLER_PROCESSOR
+  implements: [FADP-16-2-d]
+- id: OPDo-11-1
+  provision: OPDo 11(1)
+  summary: Binding corporate rules apply to all companies of the same group
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-16-2-e]
+- id: OPDo-11-2
+  provision: OPDo 11(2)
+  summary: Binding corporate rules cover at least the points of OPDo 9(1)
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  cites: [OPDo-9-1-a, OPDo-9-1-b, OPDo-9-1-c, OPDo-9-1-d, OPDo-9-1-e, OPDo-9-1-f, OPDo-9-1-g, OPDo-9-1-h, OPDo-9-1-i, OPDo-9-1-j-1, OPDo-9-1-j-2, OPDo-9-1-j-3, OPDo-9-1-j-4]
+  implements: [FADP-16-2-e]
+- id: OPDo-11-2-a
+  provision: OPDo 11(2)(a)
+  summary: Binding corporate rules state the structure and contact details of the group and of each entity
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: PROPERTY
+  addressee: NOT_STATED
+  part_of: [OPDo-11-2]
+- id: OPDo-11-2-b
+  provision: OPDo 11(2)(b)
+  summary: Binding corporate rules state the measures taken in the group to ensure compliance with them
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: PROPERTY
+  addressee: NOT_STATED
+  part_of: [OPDo-11-2]
+- id: OPDo-12-1
+  provision: OPDo 12(1)
+  summary: Disclosure abroad allowed if a code of conduct or certification guarantees an appropriate level of protection
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DISCLOSURE_PRINCIPLES
+  layer: EXCEPTION
+  addressee: NOT_STATED
+  alternative_to: [FADP-16-1]
+  applies_if_all: [OPDo-12-2, OPDo-12-3]
+- id: OPDo-12-2
+  provision: OPDo 12(2)
+  summary: The code of conduct is submitted to the FDPIC for approval beforehand
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: CONDITION
+  addressee: NOT_STATED
+- id: OPDo-12-3
+  provision: OPDo 12(3)
+  summary: Code or certification carries a binding, enforceable commitment of the controller or processor in the third State to apply its measures
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DISCLOSURE_PRINCIPLES
+  layer: CONDITION
+  addressee: NOT_STATED
+- id: OPDo-13
+  provision: OPDo 13
+  summary: Information is concise, transparent, comprehensible, easily accessible
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER
+  implements: [FADP-19-1-1]
+- id: OPDo-14
+  provision: OPDo 14
+  summary: Keep the assessment at least 2 years after the processing ends
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EVIDENCE
+  addressee: CONTROLLER
+  retention_min: 2 YEARS
+  retention_start: END_OF_PROCESSING
+  evidences: [FADP-22-1-2]
+- id: OPDo-15-1-b
+  provision: OPDo 15(1)(b)
+  summary: Notification states time and duration, as far as possible
+  concept: REQUIREMENT
+  test: PARTLY
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-24-1-1]
+- id: OPDo-15-1-c
+  provision: OPDo 15(1)(c)
+  summary: Notification states data categories and number, as far as possible
+  concept: REQUIREMENT
+  test: PARTLY
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-24-1-1]
+- id: OPDo-15-1-d
+  provision: OPDo 15(1)(d)
+  summary: Notification states persons categories and number, as far as possible
+  concept: REQUIREMENT
+  test: PARTLY
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-24-1-1]
+- id: OPDo-15-1-g
+  provision: OPDo 15(1)(g)
+  summary: Notification names a contact person
+  concept: ROLE
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: IMPLEMENTATION
+  implements: [FADP-24-1-1]
+- id: OPDo-15-2-1
+  provision: OPDo 15(2)
+  summary: Missing information is sent later
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER
+  implements: [FADP-24-1-1]
+- id: OPDo-15-2-2
+  provision: OPDo 15(2)
+  summary: As soon as possible
+  concept: REQUIREMENT
+  test: UNDEFINED
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER
+  deadline: UNDEFINED
+  implements: [FADP-24-1-1]
+- id: OPDo-15-3-1
+  provision: OPDo 15(3)
+  summary: Notice to data subject in simple, understandable language
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER
+  implements: [FADP-24-4-1]
+- id: OPDo-15-3-2
+  provision: OPDo 15(3)
+  summary: Notice contains nature, consequences, measures, contact
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER
+  implements: [FADP-24-4-1]
+- id: OPDo-15-4-1
+  provision: OPDo 15(4)
+  summary: Controller documents breaches
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EVIDENCE
+  addressee: CONTROLLER
+  applies_if_all: [FADP-5-h]
+  evidences: [FADP-24-1-1]
+- id: OPDo-15-4-2
+  provision: OPDo 15(4)
+  summary: Documentation holds facts, effects, measures
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EVIDENCE
+  addressee: NOT_STATED
+  part_of: [OPDo-15-4-1]
+- id: OPDo-15-4-3
+  provision: OPDo 15(4)
+  summary: Documentation kept at least 2 years
+  concept: EVIDENCE
+  test: BOOLEAN
+  level: CONTROLLER_PROCESSOR_DUTIES
+  layer: EVIDENCE
+  addressee: NOT_STATED
+  retention_min: 2 YEARS
+  retention_start: NOTIFICATION_DATE
+  part_of: [OPDo-15-4-1]
+- id: OPDo-16-1
+  provision: OPDo 16(1)
+  summary: Request in writing (oral if the controller agrees)
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-25-1]
+- id: OPDo-16-2
+  provision: OPDo 16(2)
+  summary: Information is given in writing or in the form in which the data exist
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-25-1]
+- id: OPDo-16-4
+  provision: OPDo 16(4)
+  summary: Information is given in a form comprehensible to the data subject
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-25-1]
+- id: OPDo-16-5
+  provision: OPDo 16(5)
+  summary: Take reasonable measures to identify the requester
+  concept: REQUIREMENT
+  test: ASSESSMENT
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER
+  implements: [FADP-25-1]
+- id: FACT-OPDo-17-1
+  provision: OPDo 17(1)
+  summary: Several controllers process the data jointly
+  concept: FACT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CONDITION
+- id: OPDo-17-1
+  provision: OPDo 17(1)
+  summary: 'Joint controllers: right of access against each'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER
+  applies_if_all: [FACT-OPDo-17-1]
+  implements: [FADP-25-1]
+- id: FACT-OPDo-17-2
+  provision: OPDo 17(2)
+  summary: The request concerns data processed by a processor
+  concept: FACT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CONDITION
+- id: OPDo-17-2
+  provision: OPDo 17(2)
+  summary: Processor assists the controller
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: PROCESSOR
+  applies_if_all: [FACT-OPDo-17-2]
+  implements: [FADP-25-4]
+- id: FACT-OPDo-18-2
+  provision: OPDo 18(2)
+  summary: The information cannot be given within 30 days
+  concept: FACT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CONDITION
+- id: OPDo-18-2
+  provision: OPDo 18(2)
+  summary: If not possible in 30 days, state the date
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER
+  applies_if_all: [FACT-OPDo-18-2]
+  implements: [FADP-25-7]
+- id: FACT-OPDo-18-3
+  provision: OPDo 18(3)
+  summary: The controller refuses, restricts or delays access
+  concept: FACT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: CONDITION
+- id: OPDo-18-3
+  provision: OPDo 18(3)
+  summary: 'If refusing, restricting or delaying: tell the data subject within 30 days'
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER
+  deadline: 30 DAYS
+  deadline_start: RECEIPT_OF_REQUEST
+  applies_if_all: [FACT-OPDo-18-3]
+  implements: [FADP-25-7, FADP-26-4]
+- id: OPDo-19-1
+  provision: OPDo 19(1)
+  summary: 'Exception to free access: disproportionate effort allows an adequate cost share'
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DATA_SUBJECT_RIGHTS
+  layer: EXCEPTION
+  addressee: CONTROLLER
+  exception_to: [FADP-25-6]
+- id: OPDo-19-2
+  provision: OPDo 19(2)
+  summary: Cost share is at most CHF 300
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER
+  max_amount: CHF 300
+  applies_if_all: [OPDo-19-1]
+  implements: [FADP-25-6]
+- id: OPDo-19-3-1
+  provision: OPDo 19(3)
+  summary: Controller states the amount before giving the information
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: CONTROLLER
+  applies_if_all: [OPDo-19-1]
+  implements: [FADP-25-6]
+- id: OPDo-19-3-2
+  provision: OPDo 19(3)
+  summary: Request is deemed withdrawn at no cost if the data subject does not confirm within 10 days
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  deadline: 10 DAYS
+  deadline_start: NOT_STATED
+  implements: [FADP-25-6]
+- id: OPDo-19-3-3
+  provision: OPDo 19(3)
+  summary: The 30-day period starts after the 10-day period
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  deadline: 30 DAYS
+  deadline_start: END_OF_10_DAY_PERIOD
+  implements: [FADP-25-7]
+- id: OPDo-20-1-a
+  provision: OPDo 20(1)(a)
+  summary: Data disclosed by the data subject include data deliberately provided
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-28-1]
+- id: OPDo-20-1-b
+  provision: OPDo 20(1)(b)
+  summary: Data disclosed by the data subject include data collected on behaviour when using a service or device
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-28-1]
+- id: OPDo-20-2
+  provision: OPDo 20(2)
+  summary: Data generated by the controller's own evaluation are not data disclosed by the data subject
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-28-1]
+- id: OPDo-21-1
+  provision: OPDo 21(1)
+  summary: Commonly used electronic formats allow transmission for reuse with proportionate effort
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-28-2]
+- id: OPDo-21-2
+  provision: OPDo 21(2)
+  summary: No duty to adopt or keep technically compatible systems
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-28-2]
+- id: OPDo-21-3
+  provision: OPDo 21(3)
+  summary: Effort is disproportionate where transmission to another controller is technically impossible
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-28-2]
+- id: OPDo-22
+  provision: OPDo 22
+  summary: Arts 16(1), 16(5) and 17 to 19 apply by analogy to delivery or transfer of data
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_SUBJECT_RIGHTS
+  layer: IMPLEMENTATION
+  addressee: NOT_STATED
+  implements: [FADP-28-1, FADP-28-2]
+- id: OPDo-23-a
+  provision: OPDo 23(a)
+  summary: Controller gives the officer the necessary resources
+  concept: REQUIREMENT
+  test: PARTLY
+  level: DATA_PROTECTION_OFFICER
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FACT-10-1]
+- id: OPDo-23-b
+  provision: OPDo 23(b)
+  summary: Controller gives the officer access to information, records, data
+  concept: REQUIREMENT
+  test: BOOLEAN
+  level: DATA_PROTECTION_OFFICER
+  layer: CORE
+  addressee: CONTROLLER
+  applies_if_all: [FACT-10-1]
+- id: OPDo-23-c
+  provision: OPDo 23(c)
+  summary: Officer may inform top management in important cases
+  concept: CONTROL_NAMED
+  test: BOOLEAN
+  level: DATA_PROTECTION_OFFICER
+  layer: CONTROL
+  addressee: CONTROLLER
+  applies_if_all: [FACT-10-1]
+- id: OPDo-24
+  provision: OPDo 24
+  summary: No exemption if sensitive data on a large scale or high-risk profiling
+  concept: REQUIREMENT
+  test: PARTLY
+  level: RECORD_OF_PROCESSING
+  layer: IMPLEMENTATION
+  reference_date: 1 JANUARY
+  threshold: FEWER_THAN 250 EMPLOYEES
+  applies_if_any: [FADP-5-c-1, FADP-5-c-2, FADP-5-c-3, FADP-5-c-4, FADP-5-c-5, FADP-5-c-6, FADP-5-g]
+  implements: [FADP-12-5]
+  limits: [FADP-12-5]
+levels:
+- level: SCOPE_OF_APPLICATION
+  number: '1'
+- level: PERSONAL_SCOPE
+  number: '1.1'
+  parent: SCOPE_OF_APPLICATION
+- level: SCOPE_EXCEPTIONS
+  number: '1.2'
+  parent: SCOPE_OF_APPLICATION
+- level: TERRITORIAL_SCOPE
+  number: '1.3'
+  parent: SCOPE_OF_APPLICATION
+- level: DEFINITIONS
+  number: '2'
+- level: PRINCIPLES
+  number: '3'
+- level: PROCESSING_PRINCIPLES
+  number: '3.1'
+  parent: PRINCIPLES
+- level: DESIGN_AND_DEFAULT
+  number: '3.2'
+  parent: PRINCIPLES
+- level: DATA_SECURITY
+  number: '3.3'
+  parent: PRINCIPLES
+- level: PROCESSORS
+  number: '4'
+- level: DATA_PROTECTION_OFFICER
+  number: '5'
+- level: CODE_OF_CONDUCT
+  number: '6'
+- level: RECORD_OF_PROCESSING
+  number: '7'
+- level: CERTIFICATION
+  number: '8'
+- level: PRIVATE_CONTROLLERS_ABROAD
+  number: '9'
+- level: REPRESENTATIVE
+  number: '9.1'
+  parent: PRIVATE_CONTROLLERS_ABROAD
+- level: REPRESENTATIVE_DUTIES
+  number: '9.2'
+  parent: PRIVATE_CONTROLLERS_ABROAD
+- level: CROSS_BORDER_DISCLOSURE
+  number: '10'
+- level: DISCLOSURE_PRINCIPLES
+  number: '10.1'
+  parent: CROSS_BORDER_DISCLOSURE
+- level: DISCLOSURE_EXCEPTIONS
+  number: '10.2'
+  parent: CROSS_BORDER_DISCLOSURE
+- level: ONLINE_PUBLICATION
+  number: '10.3'
+  parent: CROSS_BORDER_DISCLOSURE
+- level: CONTROLLER_PROCESSOR_DUTIES
+  number: '11'
+- level: DATA_SUBJECT_RIGHTS
+  number: '12'
+- level: PERSONALITY_BREACHES
+  number: '13'
+- level: JUSTIFICATION_GROUNDS
+  number: '14'
+- level: LEGAL_RIGHTS
+  number: '15'
+- level: INVESTIGATION
+  number: '16'
+- level: CRIMINAL_PROVISIONS
+  number: '17'
+- level: TRANSITIONAL_PROVISIONS
+  number: '18'

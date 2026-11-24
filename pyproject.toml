@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=75,<81"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grc-legal-metamodel"
+version = "0.1.0"
+description = "Local web viewer for the layered FADP legal metamodel"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.34,<1",
+  "PyYAML>=6.0.2,<7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "httpx>=0.28,<1"]
+
+[tool.setuptools.packages.find]
+include = ["metamodel*"]
+
+[tool.setuptools.package-data]
+metamodel = ["static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
