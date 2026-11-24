@@ -71,3 +71,7 @@ not evaluate their legal logic. The global applicability gate mentioned in the
 YAML comment is not expanded into synthetic edges. The table contains all
 matching units, including those outside the current diagram page. Unresolved
 reference IDs, if present, remain in the API data.
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
