@@ -3,27 +3,41 @@
 Local web explorer for `data/FADP_units_v15.yaml` (DSG / FADP and OPDo).
 The original YAML is left unchanged and read with `yaml.safe_load`.
 
-## Start in the devcontainer
+## Run the web app
 
-1. Install/start Docker Desktop and install the **Dev Containers** extension in VS Code.
-2. Open this folder in VS Code and run **Dev Containers: Reopen in Container**.
-3. The image installs the runtime and development packages declared in `pyproject.toml`. The creation hook installs this project in editable mode.
-4. In the container terminal, run:
+The app reads `data/FADP_units_v15.yaml` when `/api/model` is requested. To run
+it in an environment with the project dependencies installed:
 
-   ```sh
-   python -m uvicorn metamodel.app:app --host 0.0.0.0 --port 8000 --reload
-   ```
+```sh
+python -m uvicorn metamodel.app:app --host 0.0.0.0 --port 8000 --reload
+```
 
-5. Open **http://localhost:8000** through the forwarded port.
+Open **http://localhost:8000**. In VS Code, forward port **8000** if prompted.
+To use the provided development container instead, install Docker Desktop and
+the **Dev Containers** extension, open this folder, and run
+**Dev Containers: Reopen in Container**. The container installs dependencies
+from `pyproject.toml`.
 
-Use **Level hierarchy** for the structural overview or **Units and relations**
-for a diagram grouped by layer. Filter by level, layer, or search text; expand
-table rows to inspect all attributes, or hover/focus diagram units for a quick
-attribute preview. Download the current Mermaid source for reuse. Refresh the
-browser after editing the YAML. In the relation view, choose 12, 24, or 36
-units per page to balance diagram detail against the number of visible units.
-In the relations diagram, boxes are colored by their existing model layer; the
-legend shows the layer colors for the current page.
+## Explore the model
+
+- **Level hierarchy** displays the YAML's 29-level chapter hierarchy as a
+  Mermaid diagram. It is shown at 50% width to fit more of the hierarchy in
+  view; scroll the diagram area to move through it. Hover over or keyboard-focus
+  a level to see its number, parent, matching-unit count, and up to eight
+  matching units. Levels with no directly assigned units are identified.
+- **Units and relations** groups matching units by `layer`. Choose 12, 24, or
+  36 units per page and use **Previous/Next** to browse; edges are drawn only
+  when both endpoints are on the current page. Box colors correspond to the
+  layer legend, which updates with the page.
+- Filter by level or layer, or search unit ID, provision, or summary. Hover
+  over or keyboard-focus a diagram unit to preview its attributes. Expand the
+  unit's table row to inspect the full record.
+- **Download Mermaid** saves the source for the currently selected diagram.
+  Refresh the browser after editing the YAML to load the updated data.
+
+Mermaid is loaded from jsDelivr, so browser internet access is required for
+diagrams. The API and table are served locally; if Mermaid cannot load, the
+unit table and Mermaid source text remain available.
 
 ## Packages and isolation
 
@@ -52,9 +66,8 @@ python -m pytest
 
 This is an explorer of the supplied model, not a legal reasoning engine. Edges
 show explicit reference fields, including `applies_if_all`, `applies_if_any`,
-`exception_to`, and `implements`. These relation types remain distinct; the UI
-does not evaluate their logic. The global applicability gate mentioned in the
-YAML comment is not expanded into synthetic edges. Unit diagrams show 12, 24, or 36 matching nodes per page and only edges whose
-endpoints are visible. Use Previous/Next to browse; the diagram viewport stays
-bounded. The table contains
-all matching units. Unresolved reference IDs remain in the API data.
+`exception_to`, and `implements`. Relation types remain distinct; the UI does
+not evaluate their legal logic. The global applicability gate mentioned in the
+YAML comment is not expanded into synthetic edges. The table contains all
+matching units, including those outside the current diagram page. Unresolved
+reference IDs, if present, remain in the API data.
